@@ -1,0 +1,21 @@
+body {
+    background:black;
+     font-family: "Rubik Wet Paint", system-ui;
+        font-weight: 250;
+        font-style: normal;
+        font-size: 32px;   
+      
+      
+      
+      
+    }
+    h1 {
+    color:lime;
+    text-align: center;
+    font-style: normal;
+    
+    }
+    h2{
+        color:lightskyblue;
+        font-size: smaller;
+    }
