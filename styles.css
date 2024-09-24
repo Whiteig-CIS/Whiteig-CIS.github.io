@@ -4,7 +4,7 @@ body {
         font-weight: 250;
         font-style: normal;
         font-size: 32px;   
-      
+        color:azure;
       
       
       
@@ -19,6 +19,6 @@ body {
         color:lightskyblue;
         font-size: smaller;
     }
-    p{
-        color:lightskyblue;
+    h3{
+        color:skyblue;
     }
