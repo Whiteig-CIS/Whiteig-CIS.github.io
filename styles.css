@@ -4,7 +4,8 @@ body {
         font-weight: 250;
         font-style: normal;
         font-size: 32px;   
-        color:beige;
+        border: 2px solid red;
+        border-radius: 5px;
       
       
       
@@ -18,7 +19,39 @@ body {
     h2{
         color:lightskyblue;
         font-size: smaller;
-    }
-    p{
+        border: 2px solid lime;
+        border-radius: 5px;
+        }
+   
+    .projects 
+        { 
+            display:contents;
+            flex-wrap:wrap-reverse;
+        } 
+    .project 
+    {
+        width: 75%;
+        margin: 10px;
+        padding: 20px 10px;
+        background: white; /* pick a color */
+        border-radius: 10%;
         color:lightskyblue;
     }
+    .project img{
+        width: 600px;
+        height: 300px;
+        margin: 10px;
+        border: 2px solid rgb(126, 14, 201); /* choose a color */
+        display: block;
+        margin: auto;
+        }
+
+        a { /* change the appearance of ALL links */
+            text-decoration: none;
+            color: purple;
+            }
+
+            .project p { /* change the appearance of paragraph tags inside .project divs */
+                text-align: center;
+                margin: 15px;
+                }
