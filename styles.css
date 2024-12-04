@@ -18,20 +18,25 @@ display:contents;
 flex-wrap:wrap-reverse;
 } 
     */
-.project 
+/*.project 
 {
-/*width: 75%;
-margin: 40px;
-padding: 20px 10px;
-background: white; /* pick a color 
-border-radius: 10%;
-color:lightskyblue;*/
+width:75%;
 background-color:lightgray;
 border: rgb(154, 125, 87), 150px;
 border-radius: 25px;
 margin-top: 10px;
-margin-bottom: 10px;
-}
+margin-bottom: 10px; */
+
+.project {
+    width: 75%;
+    background-color: lightgray;
+    border: 5px solid rgb(154, 125, 87); /* Changed border to proper syntax */
+    border-radius: 25px;
+    margin: 10px auto; /* Center align and add top/bottom margin */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
     .project img
         {
             width: 800px;
@@ -40,6 +45,7 @@ margin-bottom: 10px;
             border: 2px solid rgb(154, 125, 87); /* choose a color*/
             display: block;
             margin: auto;
+            justify-content: center;
             
         }
 
