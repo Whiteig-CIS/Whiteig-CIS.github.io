@@ -1,37 +1,33 @@
 body 
 {
-background:rgb(255, 253, 208);
-font-family:'Times New Roman', Times, serif;
+background-image: linear-gradient(to bottom right,#09498F, #4C61F5, #01F590);
+font-family:'Cinzel', serif;
 font-size: 32px;   
-height: 1px;
+
 }
  
 h1 
 {
 text-align: center;
+margin-bottom: 0;
+margin-top: 10px;
+}
+h3{
+    text-align: center;
 }
 
-   
-/*.projects 
-{ 
-display:contents;
-flex-wrap:wrap-reverse;
-} 
-    */
-/*.project 
-{
-width:75%;
-background-color:lightgray;
-border: rgb(154, 125, 87), 150px;
-border-radius: 25px;
-margin-top: 10px;
-margin-bottom: 10px; */
+hr {
+    border: 1px solid black; /* Change color and thickness */
+    background-color: black; /* Use if you want a filled effect */
+    height: .5px; /* Optional: control thickness */
+    width:95%
+  }
 
 .project {
     width: 75%;
-    background-color: lightgray;
-    border: 5px solid rgb(154, 125, 87); /* Changed border to proper syntax */
-    border-radius: 25px;
+    background-color:azure;
+    border: 5px solid black; /* Changed border to proper syntax */
+    border-radius: 1rem;
     margin: 10px auto; /* Center align and add top/bottom margin */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -39,10 +35,10 @@ margin-bottom: 10px; */
 
     .project img
         {
-            width: 800px;
+            width: 70%;
             height: auto;
             margin: auto;
-            border: 2px solid rgb(154, 125, 87); /* choose a color*/
+            border: 2px solid black; /* choose a color*/
             display: block;
             margin: auto;
             justify-content: center;
@@ -53,32 +49,97 @@ margin-bottom: 10px; */
         { /* change the appearance of ALL links */
             text-decoration: none;
             color:black;
-            
+           
         }
 
-        .project p 
-        { /* change the appearance of paragraph tags inside .project divs */
-            text-align: center;
-            margin: 15px;
-        }
+       .project, p{
+        text-align: center;
+       
+       
+       }
                 
  .about{
-            display:flex;
-            flex-wrap:wrap;
-            margin-right: 100px;
-            margin-left: 100px;
-            justify-content: center;
+          
+            display:grid;
+            grid-template-columns: 40% 60%;
+            margin-left: 5%;
+            align-items: center;
+            margin-bottom: 10rem;
+            margin-top: 5rem;
             }
             .about p {
-            width:50%;
-            text-align: center;
+            width:85%;
+            text-align: left;
             margin: auto;
-            line-height: 125%;
+            padding:1rem;
+            border: 2px solid black;
+            border-radius: 3px;
+            background-color: azure;
+        
             }
             .about img {
-            width: 150px;
-            height: 200px;
-            border-radius: 25%;
-            border: 2px solid rgb(154, 125, 87);
+            width: 75%;
+            border-radius: .25rem;
+            border: 2px solid #000000;
+            justify-self: self-start;
             }
+            .about-head
+            {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .sub-h3{
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .skills img
+            {
+                width: 50%;
+                height: auto;
+                margin: auto;
+                border: 2px solid black; /* choose a color*/
+                display: block;
+                margin: auto;
+                justify-content: center;
+                
+            }
+            h4{
+                margin-left: 25%;
+                margin-bottom: 0;
+            }
+
+        .drop {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            }
+            .drop p,a{
+               text-align: center;
+               font-weight: 500;
+               margin-top: 0;
+               margin-bottom: 0;
+               margin-left: 12%;
+            }
+
+            .contact{
+                align-items: center;
+                justify-items: center;
+            }
+            .ContactElement{
+                margin-top: 7rem;
+                margin-bottom: 7rem;
+                padding: 8px;
+                border: 3px solid black;
+                border-radius: .5rem;
+                background-color: azure;
+                
+            }
+          .ContactElement a,i,p{
+            display: inline;
+            margin: 0;
+            padding: 0;
+          }
+            
+           
             
