@@ -34,7 +34,7 @@ body{
 
 /* main background of page, course description, and github link */
 
-#gotham {
+#nature {
     background:url(images/nature.jpg) no-repeat;
     background-size: 100% 100%; /* stretches the background image to fill the width and height of its parent */
     height: 100%; 
