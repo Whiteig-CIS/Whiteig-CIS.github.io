@@ -9,7 +9,7 @@ body{
 
 #content {
     display: grid;
-    background: #96b2c4;
+    background: #737373;
     grid-template-columns: 15% auto;
     grid-template-rows: 15% auto;
     row-gap: 0px;
@@ -23,7 +23,7 @@ body{
 
 #topBanner {
     padding-left: 3%;
-    background-color: #96b2c4;
+    background-color: #737373;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -54,6 +54,7 @@ body{
 
 #description {
     background-color: #F2E8B6cc;
+    margin: 15%;
 }
 
 #github {
@@ -66,11 +67,11 @@ body{
     padding-left: 25%;
     padding-right: 25%;
     grid-row-start: 2;
-    background: #96b2c4;
+    background: #737373;
 }
 
 #assignments ol {
-    background-color: #F2E8B6;
+    background-color: #A7B8D6;
     border-radius: 10px;
 }
 
@@ -87,7 +88,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #4072AF;
+    color: #F2E8B6;
     text-decoration: underline;
     font-size: 200%;
 }
@@ -101,4 +102,5 @@ h2 {
 
 a {
     color: #072331;
+    text-decoration: none;
 }
