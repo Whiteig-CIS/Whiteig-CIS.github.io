@@ -1,0 +1,43 @@
+/* Structure */
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:url("images/gotham.jpeg");
+    background-size: cover;
+}
+
+#content {
+    background:rgb(98, 102, 108);
+    width: 70%;
+    margin: auto; /* this centers the div about the screen */
+    padding: 1%;
+    border-radius: 5px;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #B09B66;
+    padding: 5px 10px; /* top and bottom = 5 // right and left = 10 */
+}
+
+th {
+    background:#23282B;
+    color:#D0D991;
+}
+
+/* Images */
+#batman {
+    box-shadow: 8px 8px black;
+}
+
+/* Typography */
+h1 {
+    color:#D0D991;
+}
+
+h2 {
+    color:#B09B66;
+}
