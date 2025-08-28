@@ -1,0 +1,61 @@
+
+/* applies to screens smaller than 768px in width */
+body {
+    background:#A0BF5E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 95%;
+    margin: auto;
+    background: #95a5a3da;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#main-header {
+    background: #3E5923;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Main Navigation */
+#main-nav ul {
+    list-style-type: none; /* removes bullets */
+}
+
+#main-nav li {
+    border-bottom: 1px solid white;
+}
+
+#main-nav li:first-child {
+    border-top: 1px solid white;
+}
+
+#main-nav a {
+    color: white;
+    padding: 10px 5px;
+    display: block;
+    text-decoration: none;
+}
+
+
+/* Typography */
+h1 {
+    text-align: center;
+}
+
+/* Larger Devices */
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(images/background.jpg);
+        background-size: cover;
+        
+    }
+
+    #content {
+        width: 70%;
+    }
+}
+

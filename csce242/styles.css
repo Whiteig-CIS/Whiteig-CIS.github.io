@@ -55,10 +55,14 @@ body{
 #description {
     background-color: #F2E8B6cc;
     margin: 15%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
 }
 
 #github {
     background-color: #F2C4B3cc; 
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
 }
 
 /* Assignments list and left side of page */
