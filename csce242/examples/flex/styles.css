@@ -23,6 +23,8 @@ body {
 /* Main Navigation */
 #main-nav ul {
     list-style-type: none; /* removes bullets */
+    padding-left: 0; /* alligns things in the ul to the left side */
+
 }
 
 #main-nav li {
@@ -35,9 +37,14 @@ body {
 
 #main-nav a {
     color: white;
-    padding: 10px 5px;
-    display: block;
+    padding: 10px 5px; /* padding in here so that its clickable */
+    display: block; /* takes up whole area */
     text-decoration: none;
+}
+
+#main-nav a:hover {
+    background: white; /* changes the color when you hover over it */
+    color:#3E5923;
 }
 
 
@@ -56,6 +63,31 @@ h1 {
 
     #content {
         width: 70%;
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    /* main-nav */
+    #main-nav li,  #main-nav li:first-child {
+        border: none;
+    }
+
+    #main-nav a {
+        padding: 5px;
+        text-align: center;
+    }
+
+    #main-nav a:hover {
+        background:#3E5923;
+        color: white;
+        border-bottom: 1px solid white;
     }
 }
 

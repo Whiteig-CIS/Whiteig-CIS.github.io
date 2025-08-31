@@ -34,7 +34,7 @@ body{
 
 /* main background of page, course description, and github link */
 
-#nature {
+#assignments {
     background:url(images/nature.jpg) no-repeat;
     background-size: 100% 100%; /* stretches the background image to fill the width and height of its parent */
     height: 100%; 
@@ -53,35 +53,17 @@ body{
 
 
 #description {
-    background-color: #F2E8B6cc;
-    margin: 15%;
+    background-color: #737373;
+    margin: 1%;
     padding: 1% 1% 1% 1%;
     border-radius: 10px;
+    grid-row-start: 2;
 }
 
 #github {
     background-color: #F2C4B3cc; 
     padding: 1% 1% 1% 1%;
     border-radius: 10px;
-}
-
-/* Assignments list and left side of page */
-#assignments {
-    padding-top: 15%;
-    padding-left: 25%;
-    padding-right: 25%;
-    grid-row-start: 2;
-    background: #737373;
-}
-
-#assignments ol {
-    background-color: #A7B8D6;
-    border-radius: 10px;
-}
-
-#assignments li {
-    padding: 5% 5% 5% 5%;
-    
 }
 
 /* Typography */
