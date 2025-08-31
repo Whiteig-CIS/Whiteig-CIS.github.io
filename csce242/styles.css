@@ -1,92 +1,133 @@
 /* Isaac White 2025 */
 
-/* body and content */
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+body {
+    background: #072233;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #content {
-    display: grid;
-    background: #737373;
-    grid-template-columns: 15% auto;
-    grid-template-rows: 15% auto;
-    row-gap: 0px;
-    height: 100vh;
-    width: 100vw;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    column-gap: 12px;
+
 }
 
-/* CRN and my Name */
-
-#topBanner {
-    padding-left: 3%;
-    background-color: #737373;
-    grid-column-start: 1;
-    grid-column-end: 3;
+/* main-header styling */
+#main-header {
+    background: #fff;
+    padding: 0 1% 1% 1%;
+    border-radius: 40px;
+    margin-top: 5px;
 }
 
-#topBanner h1 {
-    margin-top: 1%;
+#main-header h1 {
+    padding-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-/* main background of page, course description, and github link */
+/* Main-nav styling */
+.columns {
+    display: flex;
+}
 
-#assignments {
-    background:url(images/nature.jpg) no-repeat;
-    background-size: 100% 100%; /* stretches the background image to fill the width and height of its parent */
-    height: 100%; 
-    border-top-left-radius: 60px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    box-shadow: -4px -4px 15px rgba(0.5, 0.5, 0.5, 0.5);
-    
-    display: flex; /* Allows me to align the items how id like */
-    flex-direction: column; /* stacks the items */
-    justify-content: center; /* Horizontal alignment */
-    align-items: center; /* vertical alignment */
+#main-nav ul {
+    list-style-type: none; /* removes bullets */
+    padding-left: 0;
+}
+
+#main-nav li {
+    flex: 1;
+    background: #072233;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#main-nav a{
+    display: block;
     text-align: center;
+    text-decoration: none;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    color: #fff;
 }
 
-
-
-#description {
-    background-color: #737373;
-    margin: 1%;
-    padding: 1% 1% 1% 1%;
-    border-radius: 10px;
-    grid-row-start: 2;
+/* typography */
+#main-header h1 {
+    text-align: center;
+    color: #072233;
+    font-size: 9vw;
 }
 
-#github {
-    background-color: #F2C4B3cc; 
-    padding: 1% 1% 1% 1%;
-    border-radius: 10px;
-}
-
-/* Typography */
-h1 {
-    color: #F2E8B6;
+#main-nav li {
     font-size: 5vw;
 }
+/**/
+#main-content {
+    display: flex;
+    justify-content: center;
+}
 
-h2 {
+#assignments{
+    list-style-type: none;
+    align-content: center;
+    padding: 0;
+    width: 50%;
+}
+
+#assignments li {
+    padding: 5px 20px 5px 20px;
+    background: #fff;
+    margin-bottom: 3px;
+    
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+#assignments p {
     text-align: center;
-    color: #F2E8B6;
-    text-decoration: underline;
-    font-size: 200%;
 }
 
-#gotham p {
-    padding: 1% 1% 1% 1%;
-    border-radius: 20px;
-    color: #000000;
-    font-size: 150%;
-}
-
-a {
-    color: #072331;
+#assignments a {
+    color:#072233;
     text-decoration: none;
+}
+
+/* for larger screens only */
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(images/nature.jpg);
+        background-size: 100vw 100vh;
+    }
+
+    #main-header {
+        background: #072233d4;
+    }
+
+    #main-header h1 {
+        font-size: 4.5vw;
+        color: #fff;
+    }
+
+    #main-nav li {
+        font-size: 2.5vw;
+        border-radius: 1px;
+        background: #fff;
+    }
+
+    #main-nav a{
+        color: #072233d4;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #assignments {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #assignments li {
+        margin-right: 10px;
+        flex: 0 0 30%;
+    }
+    
 }
