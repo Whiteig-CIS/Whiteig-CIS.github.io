@@ -15,6 +15,10 @@ body {
     color: #2B3236;
 }
 
+#main-content h3 {
+    text-align: center;
+}
+
 /* main nav */
 
 #main-nav ul {
@@ -41,24 +45,144 @@ body {
     text-align: center;
 }
 
-#main-content h2 {
-    color: #2B3236;
+/* hide class */
+.hide {
+    display: none;
 }
 
+/* links */
 #links{
     background: #1C8DE0;
     padding: 5px 5px 5px 5px;
 }
 
+#links h3 {
+    padding-left: 5px;
+}
+
+#links ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+/* Titles */
+
+#titles section {
+    background: #3F5C8B;
+}
+
+/* Gallery */
+#gallery section {
+    background: #2b3236;
+}
+
+/* Titles X Gallery */
+
+#gallery section, #titles section {
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#gallery section div, #titles section div {
+    text-align: center;
+}
+
+#gallery section div img, #titles section div img{
+    width: 97%;
+}
+
+/* footer */
+footer {
+    background: #1C8DE0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Typography */
+#links a{ 
+    color: #fff;
+}
+
+#main-content h2 {
+    color: #2B3236;
+}
+
+footer {
+    color: white;
+}
+
+
 @media only screen and (min-width: 768px) {
 
-    /* Columns */
-.columns {
-    display: flex;
-}
+    /* content */
+    #content {
+        width: 100%;
+        padding: 0;
+    }
 
-.one {
-    flex: 1;
-}
+    .hide{
+    display: block;  
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    /* main-nav */
+    #main-nav li {
+        flex: 1;
+    }
+
+    /* ideas */
+    #ideas {
+        flex-wrap: wrap;
+    }
+
+    #ideas section {
+        width: 49%
+    }
+
+    #ideas aside {
+        padding-left: 5px;
+    }
+
+    #titles , #gallery {
+        flex-wrap: wrap;
+    }
+
+    #titles {
+        margin-right: 0;
+    }
+
+    #titles section {
+        width: 47%;
+        margin-left: 5px;
+    }
+
+    #gallery section {
+        width: 30%;
+        margin-left: 5px;
+    }
+
+    /* footer */ 
+    footer {
+        margin-top: 5px;
+    }
 
 }
