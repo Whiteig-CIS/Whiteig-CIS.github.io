@@ -1,0 +1,7 @@
+body {
+    font-family: berlingske;
+}
+
+.columns {
+    display: flex;
+}
