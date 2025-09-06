@@ -157,54 +157,6 @@ h1 {
         padding-bottom: 20px;
     }
 
-    .right img {
-        width: 100%;
-    }
-
-    /* programs */
-    #programs {
-        color: var(--third-color);
-        text-align: center;
-        background: var(--main-text);
-    }
-
-    #programs h1{
-        color: var(--primary-color);
-        padding-top: 50px;
-    }
-
-    #button-container {
-        display: block;
-        position: relative;
-        height: 200px;
-    }
-
-    #button-container a {
-        position: absolute;
-    }
-
-    /* positioning buttons */
-    #bttn-1 {
-        left: 12%;
-        top: 0;
-    }
-
-    #bttn-2 {
-        right: 12%;
-        top: 0;
-    }
-
-    #bttn-3 {
-        bottom: 35%;
-        left: 40%;
-    }
-
-    #button-container a {
-        background: var(--primary-color);
-        color: var(--main-text);
-        padding: 14px 24px 14px 24px;
-    }
-
 /* MEDIA QUERY */
 @media only screen and (min-width: 768px) {
 

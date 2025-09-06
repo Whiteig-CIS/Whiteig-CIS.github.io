@@ -1,23 +1,39 @@
+:root {
+    --primary-color: #A0BF5E;
+    --secondary-color: #95a5a3da;
+    --third-color: #3E5923;
+    --fourth-color: #4e6f2c;
+}
 
 /* applies to screens smaller than 768px in width */
 body {
-    background:#A0BF5E;
+    background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #content {
     width: 95%;
     margin: auto;
-    background: #95a5a3da;
+    background: var(--secondary-color);
     border-radius: 5px;
     padding: 5px;
 }
 
 #main-header {
-    background: #3E5923;
+    background: var(--third-color);
     color: white;
     border-radius: 5px;
     padding: 5px;
+    position: relative;
+}
+#main-header img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 125px;
+    border-radius: 50px;
 }
 
 #main-content section, #main-content aside {
@@ -25,19 +41,29 @@ body {
 }
 
 .squirell {
-    background: #4e6f2c;
+    background: var(--fourth-color);
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
 }
 
-/*
-.squirell .column div {
-    width: 30%;
+/* showcase */
+#showcase {
+    position: relative;
 }
-*/
 
-/* Gallery */
+#showcase p {
+    background: var(--fourth-color);
+    color: white;
+    padding: 10px;
+    width: fit-content;
+
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+   
+}
+
 #gallery {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -57,13 +83,17 @@ img {
     max-width: 100%;
 }
 
-/* Main Navigation */
-#main-nav ul {
+/* General Nav */
+nav ul {
     list-style-type: none; /* removes bullets */
     padding-left: 0; /* alligns things in the ul to the left side */
-
 }
 
+nav a {
+    text-decoration: none;
+}
+
+/* Main Navigation */
 #main-nav li {
     border-bottom: 1px solid white;
 }
@@ -76,13 +106,31 @@ img {
     color: white;
     padding: 10px 5px; /* padding in here so that its clickable */
     display: block; /* takes up whole area */
-    text-decoration: none;
 }
 
 #main-nav a:hover {
     background: white; /* changes the color when you hover over it */
     color:#3E5923;
 }
+
+/* login-nav */
+#login-nav {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+}
+
+#login-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+#login-nav a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
 
 /* Typography */
 h1 {
@@ -156,6 +204,14 @@ h1 {
 
     .hide-small {
         display: block;
+    }
+
+    #login-nav a {
+        display: inline;
+    }
+
+    #login-nav li:not(:last-child)::after {
+        content: "|";
     }
 }
 
