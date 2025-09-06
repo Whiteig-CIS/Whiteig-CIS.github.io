@@ -96,7 +96,7 @@ h1 {
     width: 60%;
     color: var(--primary-color);
     margin: 0;
-    padding-top: 5px;
+    padding: 5px 0px 0px 20px;
 }
 
 /* text */
@@ -157,8 +157,17 @@ h1 {
         padding-bottom: 20px;
     }
 
+    /* right */
     .right img {
         width: 100%;
+    }
+
+.bttn {
+        background: var(--primary-color);
+        color: var(--main-text);
+        padding: 14px 24px 14px 24px;
+        text-align: center;
+        border: 2px solid var(--main-text)
     }
 
     /* programs */
@@ -199,11 +208,65 @@ h1 {
         left: 40%;
     }
 
-    #button-container a {
-        background: var(--primary-color);
-        color: var(--main-text);
-        padding: 14px 24px 14px 24px;
+    /* second image */
+    #second-image {
+        position: relative;
+        
+        background: var(--main-text);
     }
+
+    #second-image img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* image text */
+    #image-text {
+        position: absolute;
+        
+        background: var(--secondary-color);
+        bottom: 10%;
+        
+        
+        padding: 30px 20px 30px 20px;
+        color: white;
+    }
+
+    #image-text h1 {
+        font-size: 175%;
+        padding-left: 10px
+    }
+
+    #image-text p {
+        line-height: 1.75;
+        margin-bottom: 10%;
+    }
+
+    /* testimony */
+    #testimony {
+        background: var(--primary-color);
+    }
+
+    #testimony div {
+        text-align: center;
+    }
+
+    #profile {
+        border-radius: 50%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    #testimony p {
+        width: 75%;
+        margin: auto;
+        padding-bottom: 45%;
+        font-size: 150%;
+        line-height: 1.75;
+    }
+
+    
+    
 
 /* MEDIA QUERY */
 @media only screen and (min-width: 768px) {
@@ -223,6 +286,10 @@ h1 {
 
     .hide-big {
         display: none;
+    }
+
+    .one {
+        flex: 1;
     }
 
     /* main nav */
@@ -290,5 +357,79 @@ h1 {
         margin: 0;
         padding: 0;
     }
+
+    /* programs */ 
+    #programs p {
+        width: 75%;
+        margin: auto;
+        margin-top: 3%;
+    }
+
+    #programs h1 {
+        font-size: 275%;
+    }
+
+    /* button container */
+    #button-container {
+        position: static;
+        display: flex;
+        width: 75%;
+        margin: auto;
+    }
+
+    #button-container li {
+        padding: 0;
+    }
+
+    #button-container a {
+        position: static;
+        height: fit-content;
+        width: fit-content;
+        margin: 10px;
+    }
+
+    /* second image */
+    #second-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 80vh; /* optional, to never exceed the section's height */
+    }
+
+    /* image text */
+    #image-text {
+        width: 50%;
+        right: 7%;
+        left: auto;
+    }
+
+
+    /* testimony */
+    #testimony {
+        background: var(--primary-color);
+        padding: 10px;
+        
+    }
+
+    #testimony div {
+        text-align: left;
+    }
+
+    #profile {
+     margin-left: 30%;
+    }
+
+    #testimony p {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        font-size: 150%;
+        line-height: 1.75;
+        padding-bottom: 0;
+        margin-left: 15%;
+    }
+
+
 
 }
