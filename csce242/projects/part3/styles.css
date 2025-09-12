@@ -27,6 +27,10 @@ li, a {
 
 /******** HEADER ********/
 
+    #main-header {
+        width: 100%;
+    }
+
     /* logo */
     #logo-banner {
        background-color: var(--primary-color);
@@ -104,7 +108,7 @@ li, a {
     #home-image h1{
         position: absolute;
         color: var(--book-now-text);
-        font-size: 250%;
+        font-size: 10vw;
         width: 50%;
         left: 7%;
         bottom: 25%;
@@ -116,26 +120,188 @@ li, a {
         border-radius: 50px;
     }
 
-    .home-split-vid img{
-        margin-top: 16px;
-        width:100%;
-    }
     /*home description*/
 
-    #home-description {
-        padding: 0 15px;
-    }
+        #home-description {
+            padding: 0 15px;
+        }
 
-    #home-description h1 {
-        border-bottom: 1px solid var(--secondary-color);
-        width: 80%;
-        font-size: 150%;
-        padding-bottom: 10px;
-    }
+        #home-description h1 {
+            border-bottom: 1px solid var(--secondary-color);
+            width: 80%;
+            font-size: 200%;
+            padding-bottom: 10px;
+        }
 
-    #home-description p {
-        font-size: 115%;
-    }
+        #home-description p {
+            font-size: 115%;
+        }
+
+    /* home icons */
+        #home-icons img{
+            width: 100%;
+        }
+
+        #home-icons {
+            padding-top: 15px;
+            background: var(--primary-color);
+        }
+
+        /* auto and marine */
+        .home-split-description h1 {
+            font-size: 200%;
+            margin: 15px;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        .home-split-description p {
+            padding:15px;
+            font-size: 115%;
+            margin: 0;
+        }
+
+        .home-split-vid {
+            padding: 15px;
+        }
+
+        .home-split-vid img{
+            margin-top: 16px;
+            width:100%;
+            border-radius: 50px;
+        }
+
+     /******** Auto / Marine ********/
+        #detailing-image {
+            position: relative;
+            margin-top: 10px;
+        }
+
+        #detailing-image img{
+            width: 100%
+        }
+
+         #detailing-image h1{
+            margin: 0;
+            padding: 0;
+            color: var(--book-now-text);
+            position: absolute;
+            bottom: 30%;
+            left: 2.5%;
+            font-size: 8vw;
+        }
+
+        #detailing-main-content p {
+            font-weight: 600;
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+
+        #detailing-buttons ,#marine-buttons {
+            padding-bottom: 20px;
+        }
+
+        #detailing-buttons ul ,#marine-buttons ul {
+            padding: 0;
+            width: 90%;
+            margin: auto;
+        }
+        #detailing-buttons li ,#marine-buttons li {
+            text-align: center;
+            font-size: 7vw;
+            margin: 2px;
+        }
+
+        #detailing-buttons a ,#marine-buttons a {
+            display: block;
+            padding: 10px 0;
+            color: var(--book-now-text);
+            background: var(--secondary-color);
+            border-radius: 30px;
+        }
+
+         #detailing-buttons a:hover ,#marine-buttons a:hover {
+            background: var(--book-now-text);
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+         }
+
+         #explore-packages {
+            margin: 15px 10px;
+            border-bottom: 1px solid var(--secondary-color);
+            width: fit-content;
+         }
+
+
+        /***** MARINE ******/
+        #marine-h1 {
+            width: 60%;
+        }
+
+        /******** CONTACT ********/
+
+            #contact-image {
+                width: 90%;
+                margin: auto;
+            }
+
+             #contact-image img{
+                width: 100%;
+                border-radius: 50px;
+            }
+
+            #contact-description {
+                padding: 20px;
+            }
+
+            #contact-description h1 {
+                font-size: 6vw;
+                margin: 0;
+                border-bottom: 1px solid var(--secondary-color);
+                width: 40%;
+            }
+
+            #contact-description p {
+                font-weight: 600;
+                line-height: 1.75;
+            }
+
+            #contact-info {
+                background: var(--primary-color);
+                padding: 7px;
+                width: 95%;
+                margin: auto;
+                border-radius: 10px;
+            }
+
+            #contact-info ul {
+                display: flex;
+                padding: 0;
+                margin: 0 10px;
+            }
+
+            #contact-info li {
+                flex: 1;
+                display: flex;
+                min-width: 0;
+                align-items: center;
+                border-right: 1px solid var(--secondary-color);
+                justify-content: center;
+                padding: 5px;
+            }
+
+            #contact-info ul :last-child {
+                border-right: none;
+            }
+
+            #contact-info a { 
+                display: block;
+                overflow-wrap: anywhere;   /* modern, best */
+                text-align: center;
+                font-weight: 600;
+                width: 100%;
+                padding: 10px;
+            }
+
     
     @media only screen and (min-width: 768px) { 
         .columns {
@@ -152,13 +318,17 @@ li, a {
 
         /******** HEADER ********/
         #logo {
-            width: 80%;
+            width: 20vh;
         }
 
         /* main header */
         #main-header {
             background: var(--primary-color);
             padding: 10px;
+        }
+
+        #main-nav {
+            width: 100%;
         }
 
         #main-nav ul {
@@ -195,7 +365,7 @@ li, a {
         }
 
          #main-nav a {
-            font-size: 150%;
+            font-size: 2vw;
             font-weight: 100;
             flex:1;
             padding: 15px;
@@ -217,12 +387,85 @@ li, a {
             padding: 10px;
          }
 
-       
-    
+        /******** HOME PAGE ********/
+        #main-content p {
+            font-weight: 600;
+            line-height: 3;
+        }
+
+        #main-content h1 {
+            margin-bottom: 0;
+        }
+
+        #home-image h1 {
+            font-size: 5vw;
+            bottom: 35%;
+            left: 4%;
+        }
+         
+        #home-image {
+            display: flex;
+            justify-items: center;
+            padding: 15px;
+        }
+
+        #home-image img {
+            margin: 0;
+        }
+
+        #home-icons img {
+            display: block;
+            width: 50%;
+            margin: auto;
+            margin-left: 25%;
+        }
+
+        .home-split-vid {
+            padding-top: 0;
+        }
+
+        /******** Auto / Marine ********/
+
+        #detailing-image {
+            margin: 0;
+        }
+
+
+        #detailing-buttons ,#marine-buttons {
+            padding: 5px 0 15px 0;
+            width: 70%;
+            margin: auto;
+        }
+
+        #marine-buttons {
+            width: 50%;
+        }
+
+        #detailing-buttons ul ,#marine-buttons ul {
+            padding: 5px;
+            width: 97%;
+            margin: auto;
+        }
+
+        #detailing-buttons li ,#marine-buttons li {
+            flex: 1;
+            font-size: 3vw;
+        }
+
+        #explore-packages {
+            font-weight: 500;
+            font-size: 4vw;
+            margin-left: 20px;
+        }
 
     }
 
-    
+    @media only screen and (max-width: 1177px) { 
+            #home-image {
+                height: auto;
+                padding: 10% 5px;
+            }
+          }
  
    
 
