@@ -1,0 +1,253 @@
+:root {
+   --background-color: #ffffff00; 
+   --primary-color: #7d7d7d;
+   --secondary-color: #000;
+   --nav-text-color: #000;
+   --book-now-text: #fff;
+   --main-nav-hover:#8fe158;
+}
+
+
+/* General */
+body {
+    background: var(--background-color);
+    font-family: "Almarai", sans-serif;
+    margin: 0;
+} 
+
+ul {
+    list-style-type: none;
+}
+
+li, a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+
+/******** HEADER ********/
+
+    /* logo */
+    #logo-banner {
+       background-color: var(--primary-color);
+    }
+
+    #logo{
+        width: 20%;
+        margin: auto;
+    }
+
+     #main-nav {
+        width: 97%;
+        margin: auto;
+    }
+
+    #main-nav ul {
+        padding: 0;
+        margin-top: 5px;
+        border-radius: 20px;
+    }
+
+    #main-nav li {
+        text-align: center;
+        padding: 2%;
+        margin: 2px 0px;
+        background: var(--primary-color);
+        font-weight: 700;
+        border-radius: 5px;
+        border: 2px solid var(--secondary-color);
+    }
+
+    #main-nav ul :first-child {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    #main-nav ul :last-child {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    #main-nav a {
+       display: block;
+    }
+
+    /* book now */
+    #book-now {
+        width: 25%;
+        margin: auto;
+        border-radius: 20px;
+        background: var(--secondary-color);
+        color: var(--book-now-text);
+        border: 3px solid var(--book-now-text);
+        text-align: center;
+        padding: 5px;
+        font-weight: 800;
+        display: block;
+    }
+
+    #book-now:hover {
+        background: var(--book-now-text);
+        color: var(--secondary-color);
+    }
+
+    
+
+    /******** HOME PAGE ********/
+
+    /*home image*/
+    #home-image {
+        padding: 5px;
+        position: relative;
+    }
+
+    #home-image h1{
+        position: absolute;
+        color: var(--book-now-text);
+        font-size: 250%;
+        width: 50%;
+        left: 7%;
+        bottom: 25%;
+    }
+
+    #home-image img{
+        margin-top: 16px;
+        width:100%;
+        border-radius: 50px;
+    }
+
+    .home-split-vid img{
+        margin-top: 16px;
+        width:100%;
+    }
+    /*home description*/
+
+    #home-description {
+        padding: 0 15px;
+    }
+
+    #home-description h1 {
+        border-bottom: 1px solid var(--secondary-color);
+        width: 80%;
+        font-size: 150%;
+        padding-bottom: 10px;
+    }
+
+    #home-description p {
+        font-size: 115%;
+    }
+    
+    @media only screen and (min-width: 768px) { 
+        .columns {
+            display: flex;
+        }
+
+        .one {
+            flex: 1;
+        }
+
+        .four {
+            flex: 5;
+        }
+
+        /******** HEADER ********/
+        #logo {
+            width: 80%;
+        }
+
+        /* main header */
+        #main-header {
+            background: var(--primary-color);
+            padding: 10px;
+        }
+
+        #main-nav ul {
+            margin: 0;
+        }
+
+
+        
+        /* I have to do this for some reason to get rid of the border radius */
+        #main-nav ul :last-child {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        #main-nav ul :first-child {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+
+        #main-nav li {
+            flex: 1;
+            border-radius: 0;
+            border: none;
+            border-right: 1px solid black;
+            padding: 0;
+            
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #main-nav li:last-child {
+            border-right: none;
+        }
+
+         #main-nav a {
+            font-size: 150%;
+            font-weight: 100;
+            flex:1;
+            padding: 15px;
+            margin: 3px;
+         }
+
+         #main-nav li :hover {
+            color: var(--main-nav-hover);
+         }
+
+         /* book now button */
+
+         #book-now-div {
+            display: flex;
+            padding: 10px;
+         }
+
+         #book-now {
+            padding: 10px;
+         }
+
+       
+    
+
+    }
+
+    
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* typography */
+p {
+    color: var(--secondary-color);
+}
+
+
+
+
+
+

@@ -10,7 +10,7 @@
                 <img id="main-logo" src="https://picsum.photos/50">
                 <h1>Main Title</h1>
                 <nav id="main-nav">
-                    <div id="toggle-nav">
+                    <div id="toggle-nav">.  <!-- this is going to be "nav-items" -->
                         <div></div>
                         <div></div>
                         <div></div>
@@ -37,13 +37,33 @@
             <main class="columns examples">
                 <section>
                     <button id="btn-click-me">CLICK ME</button> <!--BUTTON EXAMPLE-->
-                    <p></p>
+                    <p id="p-welcome"></p>
                 </section>
+
+                <section>
+                    <div class="columns"> 
+                        <button id="btn-happy" class="one">Happy</button>
+                        <button id="btn-sad" class="one">Sad</button>
+                        <button id="btn-clear" class="one">Clear</button>
+                    </div>
+                    <p id="p-happy"></p>
+                </section>
+
+                <section>
+                    <p>
+                        <label for="txt-emotion">Enter Emotion: </label> <!-- the "for connects them"-->
+                        <input type="text" id="txt-emotion">
+                    </p>
+                    <p id="p-emotion"></p>
+                    <img id="img-emotion" class="hidden" src="https://www.dummyimage.com/100x100/000/fff">
+                </section>
+
             </main>
             <footer>
                 <p>&copy; myname</p>
             </footer>
         </div>
         <script src="js/intro.js"></script> <!--LINKS JAVASCRIPT PAGE -->
+        <script src="js/toggle-nav.js"></script>
     </body>
 </html>
