@@ -360,6 +360,37 @@ li, a {
                 border: 2px solid var(--secondary-color);
             }
 
+        /***** LOCATIONS *****/
+        .locations-split {
+            padding: 10px;
+        }
+
+        .locations-description h1 {
+            font-size: 6vw;
+            margin: 0;
+            border-bottom: 1px solid var(--secondary-color);
+            width: 50%;
+        }
+
+        .locations-description p {
+            line-height: 2;
+            font-weight: 550;
+        }
+
+        .locations-image p {
+            width: 90%;
+            margin: auto;
+        }
+
+        .locations-image img {
+            width: 100%;
+            border-radius: 50px;
+        }
+
+        
+
+
+
     
     @media only screen and (min-width: 768px) { 
         .columns {
@@ -574,6 +605,30 @@ li, a {
             font-weight: 300;
             font-size: 2vw;
         }
+
+          /***** LOCATIONS *****/
+
+        #columbia .locations-description {
+            padding: 40px 0 0 40px;
+        }
+
+        #fort-mill .locations-description {
+            padding-left:40px;
+        }
+
+        .locations-description h1 {
+            font-size: 4vw;
+            width: 60%;
+        }
+        
+        .locations-description p {
+            font-weight: 600;
+        }
+
+
+        
+        
+         
 
 
     }
