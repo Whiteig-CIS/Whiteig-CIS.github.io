@@ -387,6 +387,18 @@ li, a {
             border-radius: 50px;
         }
 
+        /***** PORTFOLIO *****/
+        #portfolio-main-content p {
+            width: 90%;
+            margin: auto;
+        }
+
+        #portfolio-main-content img {
+            width: 100%;
+            border-radius: 50px;
+        }
+
+
         
 
 
@@ -625,12 +637,19 @@ li, a {
             font-weight: 600;
         }
 
+        /***** portfolio *****/
 
-        
-        
-         
+        #portfolio-main-content {
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
 
-
+        #portfolio-main-content p {
+            flex: 23%;
+            width: auto;
+            max-width: 25vw;
+        }
     }
 
     @media only screen and (max-width: 1177px) { 
