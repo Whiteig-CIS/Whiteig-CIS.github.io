@@ -27,16 +27,16 @@
 
     <main id="content-main-content">
         <section id="contact-top" class="columns">
-            <section id="contact-pic-description" class="columns">
-                <section id="contact-image">
+            <section id="contact-pic-description" class="columns four">
+                <section id="contact-image" class="two">
                     <img src="https://dummyimage.com/400x400/000/000000">
                 </section>
-                <section id="contact-description">
+                <section id="contact-description" class="three">
                     <h1>Isaac White</h1>
                     <p>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum</p>
                 </section>
             </section>
-            <section id="contact-info">
+            <section id="contact-info" class="one">
                 <ul>
                     <li><a href="mailto:iggywhite383@gmail.com">iggywhite383@gmail.com</a></li>
                     <li><a href="tel:+18034878156">803-487-8156</a></li>
@@ -46,19 +46,29 @@
             </section>
         </section>
 
-        <section id="contact-input" class="columns">
+        <section id="contact-input">
             <section id="contact-small-input">
                 <ul>
-                    <li>Last, First</li>
-                    <li>Email</li>
-                    <li>Phone#</li>
+                    <li>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Last, First">
+                    </li>
+                    <li>
+                        <label for="email"></label>
+                        <input type="text" id="email" placeholder="example@gmail.com">
+                    </li>
+                    <li>
+                        <label for="phone"></label>
+                        <input type="text" id="phone" placeholder="Last, First">
+                    </li>
+                    <li class="submit"><a class="hide-large" href="#">submit</a></li>
                 </ul>
             </section>
             <section id="contact-large-input">
-                <p>Messages</p>
+                <textarea id="contact-message" placeholder="Enter your message here"></textarea>
             </section>
-            <section id="submit">
-                <a href="#">submit</a>
+            <section class="submit">
+                <a class="hide-small" href="#">submit</a>
             </section>
         </section>
     </main>
