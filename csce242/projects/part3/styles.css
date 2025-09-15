@@ -5,6 +5,7 @@
    --nav-text-color: #000;
    --book-now-text: #fff;
    --main-nav-hover:#8fe158;
+   --cancel: #ff0000;
 }
 
 
@@ -13,6 +14,7 @@ body {
     background: var(--background-color);
     font-family: "Almarai", sans-serif;
     margin: 0;
+    gap: 0;
 } 
 
 ul {
@@ -24,10 +26,23 @@ li, a {
     color: var(--nav-text-color);
 }
 
+ul, ol { 
+    margin: 0; padding: 0; 
+}
+
+main {
+    overflow: auto;
+}
+
+
 /**** hide classes ****/
 .hide-small {
-            display: none;
-        }
+    display: none;
+}
+
+.hide-all {
+    display: none;
+}
 
 
 
@@ -398,9 +413,147 @@ li, a {
             border-radius: 50px;
         }
 
-
+        /***** BOOK NOW *****/
         
+        .book-header {
+            position: relative;
+        }
 
+        .book-bttn {
+            position: absolute;
+            color: var(--book-now-text);
+            padding: 10px;
+            background: var(--secondary-color);
+            font-size: 4vw;
+            border-radius: 10px;
+            border: 2px solid var(--book-now-text);
+            top: 15%;
+        }
+
+        #book-home {
+            left: 2.5%;
+        }
+
+         .book-cancel {
+            right:2.5%;
+        }
+
+        .book-cancel:hover {
+            background: var(--cancel);
+        }
+
+         #book-home:hover {
+            background: var(--book-now-text);
+            color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        #book-steps {
+            margin: 0;
+            padding: 0;
+        }
+
+        #book-steps ul {
+            display: flex;
+            padding: 5px;
+            width: 100%;
+            margin: auto;
+            border-top: 1px solid var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+            background-color: var(--primary-color);
+        }
+
+        #book-steps li {
+            flex: 1;
+            padding: 5px;
+            text-align: center;
+           
+        }
+        #book-input { /*temporary*/
+            border-radius: 50px;
+            width: 90%;
+            margin: auto;
+            height: 800px; 
+            border: 1px solid black;
+        }
+        #book-input p {
+            margin: 30px;
+        }
+
+        .warning {
+            display: absolute;
+            text-align: center;
+            padding: 20px;
+            background: var(--primary-color);
+            width: 70%;
+            margin: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 5vw;
+        }
+
+        /**** Packages (pontoons, hauls, trucks, etc*****/
+
+        .package-description{
+            margin: 10% 0;
+        }
+
+        #package-main-content h1, h2 {
+            font-weight: 500;
+            font-size: 7vw;
+            width: 70%;
+            border-bottom: 1px solid var(--secondary-color);
+            margin: 5% 10px;
+        }
+
+        #package-main-content h2 {
+            width: 50%;
+            font-size: 6vw;
+        }
+
+         #package-main-content h3 {
+            font-size: 6vw;
+            text-align: center;
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            font-weight: 200;
+            padding: 5%;
+        }
+
+        .package-banner {
+            width: 95%;
+            margin: auto;
+        }
+
+        .package-services h3 {
+            width: fit-content;
+            padding: 10px;
+            margin: 2%;
+        }
+
+        .package-services ul{
+            margin: 2%;
+        }
+
+        .package-services li{
+            margin: 3%;
+            width: 50%;
+            font-weight: 600;
+        }
+
+     
+
+        .package-gallery  {
+            
+            text-align: center;
+        }
+
+        .package-gallery img {
+            width: 70%;
+            border-radius: 30px;
+        }
 
 
     
@@ -425,12 +578,14 @@ li, a {
             flex: 5;
         }
 
-        .hide-large {
-            display: none;
-        }
+        
 
         .hide-small {
             display: block;
+        }
+
+        .hide-large {
+            display: none;
         }
 
         /******** HEADER ********/
@@ -650,6 +805,121 @@ li, a {
             width: auto;
             max-width: 25vw;
         }
+
+        /***** BOOK *****/
+
+        #book-input {
+            width: 90%;
+            height: 500px;
+        }
+
+        #book-steps ul{
+            display: block;
+            background: none;
+            border: none;
+            padding: 15px;
+        }
+
+        #book-steps li {
+            border:2px solid var(--book-now-text);
+            padding: 30px 20px;
+            margin: 15px;
+            border-radius: 10px;
+            color: var(--book-now-text);
+            background: var(--secondary-color);
+            font-size: 2vw;
+        }
+
+        
+        #precautions {
+            position: relative;
+        }
+
+       .book-bttn {
+            top:10%;
+            font-size: 2vw;
+            left: 9%;
+            right: auto;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .warning {
+            position: absolute;
+            text-align: left;
+            padding: 10px;
+            margin: auto;
+            font-size: 3vw;
+            bottom: 20%;
+            left: 9%;
+            border: 2px solid var(--primary-color);
+        }
+        
+        /***** packages *****/
+
+        #package-main-content {
+            padding: 3%;
+        }
+
+        #package-main-content h1, #package-main-content h2 {
+            font-size: 5vw;
+            width: fit-content;
+            margin: 2%;
+        }
+
+        #package-image {
+            width: 100%;
+            text-align: center;
+        }
+
+        #package-image img {
+            width: 95%;
+            border-radius: 50px;
+        }
+
+        #package-main-content h2 {
+            font-weight: 300;
+        }
+
+
+        #package-main-content h3 {
+            font-size: 4vw;
+            font-weight: 200;
+            padding: 5px;
+        }
+
+        .package-services ul {
+            margin-bottom: 20%;
+        }
+
+        #package-main-content li {
+            font-size: 3vw;
+            width: 90%;
+            font-weight: 300;
+            margin: 10%;
+        }
+
+        .package-gallery {
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .package-gallery p{
+            flex: 40%;
+            width: auto;
+            max-width: 25vw;
+        }
+
+        .package-gallery img {
+            width: 100%;
+        }
+
+        
+
+        
+
+        
+
     }
 
     @media only screen and (max-width: 1177px) { 
