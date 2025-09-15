@@ -1,0 +1,44 @@
+:root {
+--background-color: #3e9bf8; 
+--section-background-color: #2fbb75;
+}
+
+
+body{
+    background: var(--background-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#main-content {
+    background: var(--background-color);
+    width: 100%;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    background-color: var(--section-background-color);
+    border: 2px solid var(--background-color);
+}
+
+img {
+    width: 70%;
+}
+
+#text {
+  white-space: pre;  /* preserves newlines and spacing */
+}
+
+
+
+
+@media only screen and (min-width: 768px) { 
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+}
