@@ -1,4 +1,4 @@
-
+ 
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
@@ -11,9 +11,9 @@
 
 
   .mask {
-        mask-image: url(stripes_transparent.png);
+        mask-image: url(stripes.png);
         mask-size: 300% 100%;
-        -webkit-mask-image: url(stripes_transparent.png);
+        -webkit-mask-image: url(stripes.png);
         -webkit-mask-size: 300% 100%;
       
     }

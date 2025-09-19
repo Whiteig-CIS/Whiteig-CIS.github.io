@@ -51,11 +51,51 @@
 
                 <section>
                     <p>
-                        <label for="txt-emotion">Enter Emotion: </label> <!-- the "for connects them"-->
-                        <input type="text" id="txt-emotion">
+                        <label for="text-emotion">Enter Emotion: </label> <!-- the "for connects them"-->
+                        <input type="text" id="text-emotion">
                     </p>
                     <p id="p-emotion"></p>
                     <img id="img-emotion" class="hidden" src="https://www.dummyimage.com/100x100/000/fff">
+                </section>
+
+                <section>
+                    <h3>Mood Ring</h3>
+                    <label for="mood-color">Enter Color:</label>
+                    <input type="text" id="mood-color">
+                    <span id="error-color" class="error"></span>
+
+                    <button id="color-show">SHOW</button>
+                    <p id="display-color"></p>
+                </section>
+
+                <section>
+                    <h3>Animation Fun</h3>
+                   <!-- <button id="btn-bounce">Bounce</button>
+                    <div id="ball">
+
+                    </div> -->
+                </section> 
+
+                <section>
+                    <button id="btn-count-start">Start</button>
+                    <button id="btn-count-pause">Pause</button>
+                     <button id="btn-count-reset">Restet</button>
+                    <p id="p-count"></p>
+
+                </section>
+
+                <section>
+                    <h2>Charity Goal $<span id="goal-span"></span></h2>
+                    
+                    <label for="txt-donation">Donations: </label>
+                    <input type="text" id="txt-donation">
+                    <span id="donation-error" class="error"></span>
+
+                   <p> <button id="btn-donations">Add Donation</button></p>
+
+                    <p id="goal-message"></p>
+                    <p id="thermometer"></p>
+                    
                 </section>
 
             </main>

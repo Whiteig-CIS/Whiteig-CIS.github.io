@@ -87,6 +87,23 @@ main {
     color:purple;
 }
 
+.error {
+    color: red;
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: purple;
+}
+
+.bounce {
+    animation-name: ball-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 .sub-section a {
     text-decoration:none;
     color:var(--primary-color);
@@ -138,7 +155,7 @@ main {
     height:200px;
     margin-right:10%;
     border:2px solid var(--primary-color);
-    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
+    background:linear-gradient(0deg, green 0% --donation-percent, red --donation-percent 100%);
 }
 
 .error {

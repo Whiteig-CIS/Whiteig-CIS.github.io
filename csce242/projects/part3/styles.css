@@ -1,11 +1,12 @@
 :root {
    --background-color: #ffffff00; 
-   --primary-color: #7d7d7d;
+   --primary-color: #91d3e0;
    --secondary-color: #000;
    --nav-text-color: #000;
    --book-now-text: #fff;
-   --main-nav-hover:#8fe158;
+   --main-nav-hover:#9dff00;
    --cancel: #ff0000;
+   --highlight: #000000b3;
 }
 
 
@@ -126,14 +127,33 @@ main {
         position: relative;
     }
 
-    #home-image h1{
+    #home-h1-container {
         position: absolute;
-        color: var(--book-now-text);
-        font-size: 10vw;
-        width: 50%;
         left: 7%;
         bottom: 25%;
     }
+
+    .global-h1-container h1{
+        color: var(--book-now-text);
+        font-size: 10vw;
+        background: var(--highlight);
+        width: fit-content;
+        margin: 0;
+        padding: 2%;
+    }
+
+    #home-top-h1 {
+        border-radius: 30px;
+        border-bottom-left-radius: 0px;
+    }
+
+     #home-bottom-h1 {
+        border-radius: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0;
+    }
+
+    
 
     #home-image img{
         margin-top: 16px;
@@ -166,6 +186,7 @@ main {
         #home-icons {
             padding-top: 15px;
             background: var(--primary-color);
+            margin-bottom: 15px;
         }
 
         /* auto and marine */
@@ -185,17 +206,32 @@ main {
             padding: 15px;
         }
 
-        .home-split-vid img{
-            margin-top: 16px;
-            width:100%;
-            border-radius: 50px;
+        .home-split-vid {
+            position: relative;
+            padding-top: 20px;
+        }
+
+        .home-split-vid iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
      /******** Auto / Marine ********/
+     
         #detailing-image {
             position: relative;
             margin-top: 10px;
         }
+
+        #detailing-h1-container {
+            position: absolute;
+            left: 7%;
+            bottom: 20%;
+         }
 
         #detailing-image img{
             width: 100%
@@ -205,7 +241,6 @@ main {
             margin: 0;
             padding: 0;
             color: var(--book-now-text);
-            position: absolute;
             bottom: 30%;
             left: 2.5%;
             font-size: 8vw;
@@ -254,8 +289,24 @@ main {
 
 
         /***** MARINE ******/
-        #marine-h1 {
-            width: 60%;
+
+
+        #marine-top-h1 {
+            border-radius: 30px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        #marine-bottom-h1 {
+            border-radius: 30px;
+            border-top-left-radius: 0;
+        }
+
+        /***** Auto *****/
+        .overflow-image {
+            max-height: 500px;   /* set your max height */
+            overflow: hidden;    /* crops anything beyond the max height */
+            position: relative;
         }
 
         /******** CONTACT ********/
@@ -607,6 +658,11 @@ main {
             margin: 0;
         }
 
+        /***** Divider *****/
+        .divider {
+            height: fit-content;
+        }
+
 
         
         /* I have to do this for some reason to get rid of the border radius */
@@ -646,6 +702,8 @@ main {
 
          #main-nav li :hover {
             color: var(--main-nav-hover);
+            background: var(--highlight);
+            border-radius: 20px;
          }
 
          /* book now button */
@@ -694,12 +752,14 @@ main {
 
         .home-split-vid {
             padding-top: 0;
+            padding-bottom: 20px;
         }
 
         /******** Auto / Marine ********/
 
         #detailing-image {
             margin: 0;
+            position: relative;
         }
 
 
