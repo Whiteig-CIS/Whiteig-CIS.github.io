@@ -1,5 +1,5 @@
 :root {
-   --background-color: #ffffff00; 
+   --background-color: #fff; 
    --primary-color: #91d3e0;
    --secondary-color: #000;
    --nav-text-color: #000;
@@ -12,7 +12,7 @@
 
 /* General */
 body {
-    background: var(--background-color);
+    background: var(--primary-color);
     font-family: "Almarai", sans-serif;
     margin: 0;
     gap: 0;
@@ -62,6 +62,13 @@ main {
         width: 20%;
         margin: auto;
     }
+
+    #toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color: black;
+    margin:6px 0;
+}
 
      #main-nav {
         width: 97%;
@@ -120,6 +127,25 @@ main {
     
 
     /******** HOME PAGE ********/
+
+    #main-content p {
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+
+    #home-icons {
+        background: var(--background-color) !important;
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    #home-icons img {
+       
+        overflow: hidden;
+    }
 
     /*home image*/
     #home-image {
@@ -209,15 +235,19 @@ main {
         .home-split-vid {
             position: relative;
             padding-top: 20px;
+            min-height: 450px;
         }
 
         .home-split-vid iframe {
+            min-height: fit-content;
+            max-height: 400px;
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border: 0;
+            margin: 10px;
         }
 
      /******** Auto / Marine ********/
@@ -548,7 +578,7 @@ main {
         /**** Packages (pontoons, hauls, trucks, etc*****/
 
         .package-description{
-            margin: 10% 0;
+            margin: 0% 0;
         }
 
         #package-main-content h1, h2 {
@@ -567,20 +597,21 @@ main {
          #package-main-content h3 {
             font-size: 6vw;
             text-align: center;
-            background-color: var(--primary-color);
+            
             border-radius: 10px;
             font-weight: 200;
-            padding: 5%;
+            padding: 1%;
+            background: var(--primary-color);
         }
 
         .package-banner {
             width: 95%;
             margin: auto;
+            background: var(--background-color) !important;
         }
 
         .package-services h3 {
             width: fit-content;
-            padding: 10px;
             margin: 2%;
         }
 
@@ -594,16 +625,13 @@ main {
             font-weight: 600;
         }
 
-     
-
         .package-gallery  {
-            
             text-align: center;
+            background-color: var(--highlight) !important;
         }
 
         .package-gallery img {
-            width: 70%;
-            border-radius: 30px;
+            width: 97%;
         }
 
 
@@ -629,7 +657,9 @@ main {
             flex: 5;
         }
 
-        
+        body {
+            background: var(--background-color);
+        } 
 
         .hide-small {
             display: block;
@@ -739,8 +769,14 @@ main {
             padding: 15px;
         }
 
+
         #home-image img {
             margin: 0;
+        }
+
+        #home-icons {
+            width: 100%;
+            border-radius: 0;
         }
 
         #home-icons img {
@@ -756,6 +792,11 @@ main {
         }
 
         /******** Auto / Marine ********/
+
+        #detailing-main-content p {
+            font-size: 2vw;
+            font-weight: 200;
+        }
 
         #detailing-image {
             margin: 0;
@@ -926,6 +967,14 @@ main {
             margin: 2%;
         }
 
+        .package-description{
+            margin: 10% 0;
+        }
+
+        .package-banner {
+            background: var(--primary-color) !important;
+        }
+
         #package-image {
             width: 100%;
             text-align: center;
@@ -962,12 +1011,20 @@ main {
             flex-wrap: wrap;
             gap: 10px;
             padding: 10px;
+            background: var(--background-color) !important;
         }
+        
+
+        .package-gallery img {
+            border-radius: 30px;
+        }
+
 
         .package-gallery p{
             flex: 40%;
             width: auto;
             max-width: 25vw;
+            height: fit-content;
         }
 
         .package-gallery img {
