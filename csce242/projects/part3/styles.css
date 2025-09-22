@@ -50,12 +50,13 @@ main {
 /******** HEADER ********/
 
     #main-header {
-        width: 100%;
+        max-width: 100%;
     }
-
+   
     /* logo */
     #logo-banner {
        background-color: var(--primary-color);
+       position: relative
     }
 
     #logo{
@@ -63,63 +64,71 @@ main {
         margin: auto;
     }
 
+    #toggle-nav {
+        position: absolute;
+        left: 7%;
+        top: 35%;
+        width: 5.5vw;
+        border: 1px solid var(--secondary-color);
+        box-shadow: 4px 4px 4px var(--secondary-color);
+        padding: 1%;
+    }
+
     #toggle-nav div {
-    width:25px;
-    height:2px;
-    background-color: black;
-    margin:6px 0;
-}
+        width: 100%;
+        height: 3px;
+        background: var(--secondary-color);
+        margin: 20% 0;
+    }
 
      #main-nav {
-        width: 97%;
+        max-width: 90%;
         margin: auto;
+        margin-top: 10%;
+        padding: 10px;
     }
 
     #main-nav ul {
-        padding: 0;
+        padding: 10px;
         margin-top: 5px;
-        border-radius: 20px;
+        background-color: var(--secondary-color);
+        max-width: 90vw;
+        margin: auto;
     }
 
     #main-nav li {
         text-align: center;
-        padding: 2%;
-        margin: 2px 0px;
+        font-size: 5vw;
+        margin: 2px 5px;
         background: var(--primary-color);
         font-weight: 700;
-        border-radius: 5px;
-        border: 2px solid var(--secondary-color);
+        border-radius: 0px; 
     }
 
-    #main-nav ul :first-child {
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-    }
-
-    #main-nav ul :last-child {
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-    }
-
-    #main-nav a {
+    #nav-items li a {
        display: block;
+        padding: 1vw;
     }
 
     /* book now */
     #book-now {
-        width: 25%;
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        max-width: 20%;
         margin: auto;
-        border-radius: 20px;
-        background: var(--secondary-color);
-        color: var(--book-now-text);
-        border: 3px solid var(--book-now-text);
+        border-radius: 0px;
+        /*background: var(--secondary-color);*/
+        color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
         text-align: center;
-        padding: 5px;
+        padding: 3% 5px;
         font-weight: 800;
         display: block;
+        box-shadow: 4px 4px 4px var(--secondary-color);
     }
 
-    #book-now:hover {
+    #book-now:hover ,  #book-now-large:hover {
         background: var(--book-now-text);
         color: var(--secondary-color);
     }
@@ -129,8 +138,8 @@ main {
     /******** HOME PAGE ********/
 
     #main-content p {
-        font-weight: 600;
-        line-height: 1.5;
+        font-weight: 200;
+        line-height: 2;
     }
 
 
@@ -201,7 +210,7 @@ main {
         }
 
         #home-description p {
-            font-size: 115%;
+            font-size: 150%;
         }
 
     /* home icons */
@@ -224,7 +233,7 @@ main {
 
         .home-split-description p {
             padding:15px;
-            font-size: 115%;
+            font-size: 150%;
             margin: 0;
         }
 
@@ -277,9 +286,10 @@ main {
         }
 
         #detailing-main-content p {
-            font-weight: 600;
+            font-weight: 200;
             line-height: 1.5;
             padding: 0 10px;
+            font-size: 200%;
         }
 
         #detailing-buttons ,#marine-buttons {
@@ -363,8 +373,9 @@ main {
             }
 
             #contact-description p {
-                font-weight: 600;
+                font-weight: 200;
                 line-height: 1.75;
+                font-size: 150%;
             }
 
             #contact-info ul {
@@ -470,11 +481,12 @@ main {
 
         .locations-description p {
             line-height: 2;
-            font-weight: 550;
+            font-weight: 200;
+            font-size: 200%;
         }
 
         .locations-image p {
-            width: 90%;
+            width: 100%;
             margin: auto;
         }
 
@@ -662,16 +674,16 @@ main {
         } 
 
         .hide-small {
-            display: block;
+            display: auto; 
         }
 
         .hide-large {
-            display: none;
+            display: none !important;
         }
 
         /******** HEADER ********/
         #logo {
-            width: 20vh;
+            width: 15vw;
         }
 
         /* main header */
@@ -696,14 +708,9 @@ main {
 
         
         /* I have to do this for some reason to get rid of the border radius */
-        #main-nav ul :last-child {
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
-
-        #main-nav ul :first-child {
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
+        #main-nav {
+            width: 97%;
+            margin: auto;
         }
 
         #main-nav li {
@@ -722,6 +729,10 @@ main {
             border-right: none;
         }
 
+        #main-nav ul {
+            background: var(--primary-color);
+        }
+
          #main-nav a {
             font-size: 2vw;
             font-weight: 100;
@@ -736,21 +747,29 @@ main {
             border-radius: 20px;
          }
 
+
          /* book now button */
 
-         #book-now-div {
-            display: flex;
-            padding: 10px;
-         }
+             #book-now-large {
+                width: 100% !important;
+                margin: auto;
+                border: 2px solid var(--secondary-color);
+                text-align: center;
+                padding: 1% 5px;
+                font-weight: 800;
+                display: block;
+                box-shadow: 4px 4px 1px var(--secondary-color) ;
+            }
 
-         #book-now {
-            padding: 10px;
-         }
+            #book-now-large a {
+                width: 80%;
+                margin: auto;
+            }
 
         /******** HOME PAGE ********/
         #main-content p {
-            font-weight: 600;
-            line-height: 3;
+            font-weight: 200;
+            line-height: 2;
         }
 
         #main-content h1 {
@@ -851,7 +870,7 @@ main {
         #contact-description p {
             line-height: 2;
             font-size: 1.5vw;
-            font-weight: 500;
+            font-weight: 200;
         }
 
        #contact-info ul {
@@ -890,22 +909,35 @@ main {
         }
         
         .locations-description p {
-            font-weight: 600;
+            font-weight: 200;
         }
 
         /***** portfolio *****/
+        /* Used this website to 
+        /* out the gallery. 
+        /* https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
 
-        #portfolio-main-content {
-            flex-wrap: wrap;
-            gap: 10px;
+        #portfolio {
+            line-height: 0;
+            -webkit-column-count: 5;
+            /* split it into 5 columns */
+            -webkit-column-gap: 5px;
+            /* give it a 5px gap between columns */
+            -moz-column-count: 5;
+            -moz-column-gap: 5px;
+            column-count: 5;
+            column-gap: 5px;
             padding: 10px;
+            background: var(--secondary-color);
         }
 
-        #portfolio-main-content p {
-            flex: 23%;
-            width: auto;
-            max-width: 25vw;
+        #portfolio img {
+            width: 100% !important;
+            height: auto !important;
+            margin-bottom:5px; /* to match column gap */
         }
+
+       
 
         /***** BOOK *****/
 

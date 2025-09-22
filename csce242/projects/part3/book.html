@@ -8,21 +8,28 @@
 </head>
 <body>
     <header id="main-header" class="columns">
-        <div id="logo-banner" class="one book-header">
-            <a class="book-bttn hide-large book-cancel" href="#">CANCEL</a>
-            <a id="book-home" class="book-bttn hide-large" href="index.html">HOME</a>
-        <div id="logo"><img src="images/Iggys_Detailing_Logo.svg"></div></div>
+        <div id="logo-banner" class="one">
+            <div class="hide-large" id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="logo"><img src="images/Iggys_Detailing_Logo.svg"></div>
+            <div class="hide-large" id="book-now-div"><a id="book-now" href="book.html">BOOK NOW</a></div>
+        </div>
 
         <nav id="main-nav" class="four columns">
-            <ul class="columns one">
-                <li class="hide-small"><a href="index.html">HOME</a></li>
-                <li class="hide-small"><a  href="contact.html">CONTACT</a></li>
-                <li class="hide-small"><a  href="marine.html">MARINE</a></li>
-                <li class="hide-small"><a  href="auto.html">AUTO</a></li>
-                <li class="hide-small"><a  href="service-area.html">LOCATIONS</a></li>
-                <li class="hide-small"><a  href="portfolio.html">PORTFOLIO</a></li>
+            <ul id="nav-items" class="columns hide-small">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="marine.html">MARINE</a></li>
+                <li><a href="auto.html">AUTO</a></li>
+                <li><a href="service-area.html">LOCATIONS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
             </ul>
         </nav>
+
+         <div class="hide-small one" id="book-now-large"><a href="book.html">BOOK NOW</a></div>
         
     </header>
 
@@ -55,5 +62,6 @@
     <footer>
 
     </footer>
-</body>
+<script src="js/toggle-nav.js"></script> <!--ADD-->
+</body>>
 </html>
