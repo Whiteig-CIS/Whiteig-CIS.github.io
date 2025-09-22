@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iggy's Detailing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-content">
+        <h1>Assignment 6</h1>
+        <h2>If Statements</h2>
+        <div class="down" id="toggle"> 
+        </div>
+        <ul class="hide" id="nav-items">
+            <li id="e1-bttn"><a>Exercise 1</a></li>
+            <li id="e2-bttn"><a>Exercise 2</a></li>
+        </ul>
+            <section id="exercises">
+                <div id="e1">
+                    <p>How many days has it been since watering your plant?</p>
+
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="12" value="1" class="slider" id="day-slider">
+                    </div>
+
+                    <div id=" image-container"><img id="image" src="images/healthy.png"></div>
+
+                    <p id="water-message">It's been <p id="p-days">1</p> days since watering your plant</p>
+                    <p id="water-warning"></p>
+
+                </div>
+                <div class="hide" id="e2">
+                    <h2>Our Digital Clock</h2>
+                    <span id="time"> </span>
+                </div>
+            </section>
+        
+        
+    </main>
+    <script src="js.js"></script> 
+</body>
+
+</html>
