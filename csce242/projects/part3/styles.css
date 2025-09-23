@@ -935,6 +935,7 @@ main {
             width: 100% !important;
             height: auto !important;
             margin-bottom:5px; /* to match column gap */
+            border-radius: 0;
         }
 
        
