@@ -37,7 +37,7 @@ main {
 
 
 /**** hide classes ****/
-.hide-small {
+.hide-all {
     display: none;
 }
 
@@ -719,10 +719,9 @@ main {
             border: none;
             border-right: 1px solid black;
             padding: 0;
+            margin: 0;
             
-            display: flex;
-            justify-items: center;
-            align-items: center;
+           
         }
 
         #main-nav li:last-child {
@@ -736,7 +735,7 @@ main {
          #main-nav a {
             font-size: 2vw;
             font-weight: 100;
-            flex:1;
+            
             padding: 15px;
             margin: 3px;
          }

@@ -35,12 +35,35 @@
                 <h2>Loops</h2>
             </header>
             <main class="columns examples">
-               
+
+               <section>
+                <button id="btn-display">Display</button>
+                <div id="loop-result"></div>
+               </section>
+
+               <section id="user-input">
+                    <h3>User Input</h3>
+                    <p>
+                        <label for="txt-start">Start: </label>
+                        <input  type="number" id="txt-start">
+                    </p>
+                    <p>
+                        <label for="txt-end">end: </label>
+                        <input  type="number" id="txt-end">
+                        <span id="error-number" class="error"></span>
+                    </p>
+                    <p>
+                        <button id="btn-count">count</button>
+                        <p id = "displayNums"></p>
+                    </p>
+               </section>
+
             </main>
             <footer>
                 <p>&copy; myname</p>
             </footer>
         </div>
     <script src="js/toggle-nav.js"></script>
+    <script src="js/loops.js"></script>
     </body>
 </html>
