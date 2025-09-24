@@ -41,7 +41,7 @@ main {
     display: none;
 }
 
-.hide-all {
+.hide-small {
     display: none;
 }
 
@@ -238,25 +238,18 @@ main {
         }
 
         .home-split-vid {
-            padding: 15px;
-        }
-
-        .home-split-vid {
             position: relative;
             padding-top: 20px;
             min-height: 450px;
+            height: fit-content;
+            width: 100%;
+            border: none;
+            margin: auto;
         }
 
-        .home-split-vid iframe {
-            min-height: fit-content;
-            max-height: 400px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            margin: 10px;
+        .vid-section {
+            padding: 15px;
+            padding-top: 0;
         }
 
      /******** Auto / Marine ********/
