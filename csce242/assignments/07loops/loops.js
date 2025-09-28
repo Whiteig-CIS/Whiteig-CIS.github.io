@@ -23,6 +23,7 @@ drawBtn.onclick = () => {
 
     if (hour >= 18 || hour <= 6) {
         document.getElementById("body").classList.add("night");
+        
         const newMoon = document.createElement("div");
         newMoon.classList.add("moon");
         moon.append(newMoon);
