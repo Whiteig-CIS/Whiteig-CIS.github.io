@@ -33,7 +33,7 @@ footer {
     right: 60%;
     padding: 10px;
     text-align: center;
-   
+   box-shadow: 4px 4px 4px #5b10dc;
 }
 
 #pop-up img {

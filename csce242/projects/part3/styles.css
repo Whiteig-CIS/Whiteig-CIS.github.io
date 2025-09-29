@@ -463,6 +463,7 @@ main {
         /***** LOCATIONS *****/
         .locations-split {
             padding: 10px;
+            padding-bottom: 0;
         }
 
         .locations-description h1 {
@@ -478,9 +479,15 @@ main {
             font-size: 200%;
         }
 
+        .locations-image {
+            display: flex;
+            justify-content: center;
+        }
+
         .locations-image p {
             width: 100%;
             margin: auto;
+            margin-bottom: 0;
         }
 
         .locations-image img {
@@ -489,14 +496,13 @@ main {
         }
 
         /***** PORTFOLIO *****/
-        #portfolio-main-content p {
+         #portfolio-main-content p {
             width: 90%;
             margin: auto;
         }
 
         #portfolio-main-content img {
             width: 100%;
-            border-radius: 50px;
         }
 
         /***** BOOK NOW *****/
@@ -610,7 +616,7 @@ main {
         }
 
         .package-banner {
-            width: 95%;
+            width: 98%;
             margin: auto;
             background: var(--background-color) !important;
         }
@@ -909,7 +915,7 @@ main {
         /* out the gallery. 
         /* https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
 
-        #portfolio {
+        .gallery {
             line-height: 0;
             -webkit-column-count: 5;
             /* split it into 5 columns */
@@ -919,15 +925,15 @@ main {
             -moz-column-gap: 5px;
             column-count: 5;
             column-gap: 5px;
-            padding: 10px;
+            padding: 5px;
             background: var(--secondary-color);
         }
 
-        #portfolio img {
+        .gallery img {
             width: 100% !important;
             height: auto !important;
             margin-bottom:5px; /* to match column gap */
-            border-radius: 0;
+            border-radius: 0 !important;
         }
 
        
@@ -993,7 +999,7 @@ main {
         }
 
         .package-description{
-            margin: 10% 0;
+            margin: 1% 0;
         }
 
         .package-banner {
@@ -1023,45 +1029,23 @@ main {
 
         .package-services ul {
             margin-bottom: 20%;
+            list-style-type:square;
         }
 
         #package-main-content li {
             font-size: 3vw;
             width: 90%;
             font-weight: 300;
-            margin: 10%;
+            margin: 3%;
+            border-bottom: 1px solid var(--secondary-color);
         }
 
-        .package-gallery {
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 10px;
-            background: var(--background-color) !important;
+        #package-main-content .gallery {
+            background: none !important;
+            column-count: 2; 
+            gap: 10px;   
         }
         
-
-        .package-gallery img {
-            border-radius: 30px;
-        }
-
-
-        .package-gallery p{
-            flex: 40%;
-            width: auto;
-            max-width: 25vw;
-            height: fit-content;
-        }
-
-        .package-gallery img {
-            width: 100%;
-        }
-
-        
-
-        
-
-        
-
     }
 
     @media only screen and (max-width: 1177px) { 
