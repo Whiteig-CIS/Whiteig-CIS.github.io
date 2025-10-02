@@ -98,6 +98,10 @@ main {
     background: purple;
 }
 
+#dog-image {
+    width: 100%;
+}
+
 .bounce {
     animation-name: ball-bounce;
     animation-duration: 2s;
@@ -271,12 +275,18 @@ footer p {
     height:500px;
 }
 
+.transparent {
+    visibility: hidden;
+}
 
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
     .columns {
         display:flex;
     }
+
+    
+    
 
     .gallery {
         flex-wrap:wrap;
@@ -291,7 +301,7 @@ footer p {
     }
 
     .examples section {
-        max-width:30%;
+        
         padding:10px;
         margin:0;
     }

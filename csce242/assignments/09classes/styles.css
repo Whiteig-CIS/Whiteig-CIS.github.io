@@ -1,0 +1,88 @@
+body {
+    background: #2c2c2c;
+    padding-top: 5px !important;
+}
+
+body, h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif !important; /* Overridding the stylesheet w3 schools made*/
+}
+
+.main-h1, .main-h2 {
+   color: #374633;
+   font-weight: 800;
+   background: #f0e0a1;
+   width: fit-content;
+   margin: auto;
+   padding: 5px;
+   border-radius: 5px;
+}
+
+
+
+
+.main-h1 {
+    margin-top: 5px !important;
+    padding-bottom: 2px;
+
+}
+
+.main-h2 {
+    padding-top: 2px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+}
+
+.border {
+    border: 5px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#art-board section {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.art-name {
+    background: #4a604c;
+    width: fit-content;
+    padding: 5px;
+    color: rgb(222, 235, 181);
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.my-container {
+    padding-bottom: 10px !important;
+}
+
+#modal-title, #modal-artist {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 200 !important;
+}
+
+@media screen and (min-width: 800px) {
+  /* styles go here */
+  #art-board {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #art-board section {
+    width: 30%;
+  }
+
+  .art-name {
+    font-size: 150%;
+  }
+}
