@@ -71,7 +71,7 @@
 
 ,{
     "_id":8,
-    "vehicle_type":["sedan", "suv", "truck", "coupe"],
+    "vehicle_type":"passenger_vehicle",
     "teir": "gold",
     "interior_services": ["Leather seats: Wiped down and cleaned.", "Cloth Seats: Extracted and vaccumed", "All plastics whiped down and dusted.", "Carpets vacummed and extracted", "Floor mats cleaned.", "Windows cleaned."],
     "exterior_services": ["Exterior wash and waxed.", "Wheels and tired washed and dressed.", "Truck bed pressure washed and scrubbed.", "Windows cleaned.", "Engine bay cleaned and dressed."],
