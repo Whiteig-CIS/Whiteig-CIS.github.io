@@ -19,18 +19,40 @@ const displayPackages = async () => {
         const vehicle = package.vehicle_type;
         const teir = package.teir;
 
-        switch (vehicle) {
-            case "pontoon":
-                
-                break;
-            case "haul":
-                break;
-            case "passenger_vehicle":
-                console.log("vehicle: "+vehicle +"  teir: "+teir);
-            default:
-                console.log("default");
+        const interiorUL = document.getElementById(vehicle+"-"+teir+"-interior");
+        const exteriorUL = document.getElementById(vehicle+"-"+teir+"-exterior");
+        const gallery = document.getElementById(vehicle+"-"+teir+"-gallery");
 
-        }
+        // populating the list of interior services //
+        if(interiorUL) {
+        package.interior_services.forEach((service) => {
+            const li = document.createElement("li");
+            li.innerHTML = service;
+            interiorUL.append(li);
+            
+                console.log(service);
+            
+        });
+        } 
+
+        if(exteriorUL) {
+        // populating the list of exterior services //
+        package.exterior_services.forEach((service) => {
+            const li = document.createElement("li");
+            li.innerHTML = service;
+            exteriorUL.append(li);
+        });
+    }
+
+    if(gallery) {
+        package.images.forEach((image) => {
+            const img = document.createElement("img");
+            img.src = "./json/images/"+image;
+            gallery.append(img);
+
+        });
+    }
+        
         
         
 
