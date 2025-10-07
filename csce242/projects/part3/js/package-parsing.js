@@ -28,10 +28,7 @@ const displayPackages = async () => {
         package.interior_services.forEach((service) => {
             const li = document.createElement("li");
             li.innerHTML = service;
-            interiorUL.append(li);
-            
-                console.log(service);
-            
+            interiorUL.append(li);            
         });
         } 
 
@@ -51,13 +48,13 @@ const displayPackages = async () => {
             gallery.append(img);
 
         });
-    }
+    } 
         
         
         
 
 
-    });
+    }); 
 
 };
 

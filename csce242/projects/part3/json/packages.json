@@ -25,7 +25,7 @@
     "interior_services": ["Seats washed with soap and water.", "All compartments cleaned out and washed", "Deck of boat pressure washed"],
     "exterior_services": ["All exposed dirt / grime pressure washed off.", "Side walls washed with ph-neutral soap."],
     "starting_price": 250,
-    "images": ["pontoons/silver/compartments.png", "pontoons/silver/deck.jpeg", "pontoons/silver/exterior-bronze1.jpeg", "pontoons/silver/exterior-bronze2.jpeg", "seats-noBleach.png"]
+    "images": ["pontoons/silver/compartments.png", "pontoons/silver/deck.jpeg", "pontoons/silver/exterior-bronze1.jpeg", "pontoons/silver/exterior-bronze2.jpeg", "pontoons/silver/seats-noBleach.png"]
 }
 
 ,{
@@ -35,7 +35,7 @@
     "interior_services": ["Seats washed with soap and water.", "All compartments cleaned out and washed", "Deck of boat pressure washed", "Any mold / mildew removed.", "Bimini cleaned with soap and water.", "Gloss fiberglass / waxable surfaces waxed.", "Carper / SeaDeck scrubbed and cleaned."],
     "exterior_services": ["All exposed dirt / grime pressure washed off.", "Haul washed with ph-neutral soap.", "Haul waxed and polished."],
     "starting_price": 400,
-    "images": ["hauls/bronze/overview-deck-boat.jpeg", "hauls/bronze/overview.jpeg", "hauls/silver/bimini.jpeg", "hauls/silver/seats.jpeg", "hauls/gold/after.jpeg", "hauls/gold/before.jpeg", "hauls/gold/orange-overview", "hauls/gold/wax"]
+    "images": ["hauls/bronze/overview-deck-boat.jpeg", "hauls/bronze/overview.jpeg", "hauls/silver/bimini.jpeg", "hauls/silver/seats.jpeg", "hauls/gold/after.jpeg", "hauls/gold/before.jpeg", "hauls/gold/orange-overview.jpeg", "hauls/gold/wax.jpeg"]
     
 }
 
