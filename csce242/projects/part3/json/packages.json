@@ -15,7 +15,7 @@
     "interior_services": ["Seats washed with soap and water.", "All compartments cleaned out and washed", "Deck of boat pressure washed", "Any mold / mildew removed.", "Bimini cleaned with soap and water."],
     "exterior_services": ["All exposed dirt / grime pressure washed off.", "Side walls washed with ph-neutral soap.", "Pontoons acid washed"],
     "starting_price": 300,
-    "images": ["pontoons/silver/bimini.jpeg", "pontoons/silver/compartments.png", "pontoons/silver/deck.jpeg", "pontoons/silver/exterior-bronze1.jpeg", "pontoons/silver/exterior-bronze2.jpeg", "seats-noBleach.png"]
+    "images": ["pontoons/silver/bimini.jpeg", "pontoons/silver/compartments.png", "pontoons/silver/deck.jpeg", "pontoons/silver/exterior-bronze1.jpeg", "pontoons/silver/exterior-bronze2.jpeg", "pontoons/silver/seats-noBleach.png"]
 }
 
 ,{
