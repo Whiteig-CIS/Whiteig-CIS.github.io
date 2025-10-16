@@ -36,14 +36,46 @@
             </header>
             <main class="columns">
                 <section class="one">
-                    
+                    <form method="POST" id="contact-form">
+                
+                        <input type="hidden" name="access_key" value="ead7ce0c-6566-41e7-bd92-a26fe96b6587">
+                        
+                        <p>
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="Message">Message: </label>
+                        </p>
+                         <textarea name="message" required></textarea>
+
+                        
+                
+                        <button type="submit">Submit Form</button>
+                
+                        <div id="contact-result"></div>
+                
+                    </form>
+                
+                
                 </section>
                 <section class="one">
                     <h3>Our Location</h3>
-                    
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6192.959712648963!2d-78.79184321209326!3d42.77375449678916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d305815466a99f%3A0xf0b562b249eaa7f5!2sHighmark%20Stadium!5e1!3m2!1sen!2sus!4v1760457082709!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" id="map">
+                    </iframe>
                 </section>
+                
+                
             </main>
         </div>
+    <script src="js/contact.js"></script>
     <script src="js/toggle-nav.js"></script>
     </body>
 </html>

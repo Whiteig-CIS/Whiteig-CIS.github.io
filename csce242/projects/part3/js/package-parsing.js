@@ -4,10 +4,19 @@ const getPackages = async() => {
     try {
         const response = await fetch (url); // await makes it so no further code gets executed until the data from the url is fetched
         console.log("fetching data...");
+
+        if (!response.ok) {
+            throw new Error("File not found.");
+        }
+
         return response.json();
     }
     catch(error) {
-        console.log("File now found");
+        console.log("made it to catch");
+        const main = document.getElementById("package-main-content");
+        alert("Sorry, File not found.");
+
+        
     }
 };
 

@@ -20,7 +20,7 @@
         </div>
 
         <nav id="main-nav" class="four columns">
-            <ul id="nav-items" class="columns hide-small">
+            <ul id="nav-items" class="columns hide-small-flex">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="marine.html">MARINE</a></li>
                 <li><a href="auto.html">AUTO</a></li>
@@ -55,35 +55,47 @@
         </section>
 
         <section id="contact-input">
-            <section id="contact-small-input">
-                <ul>
-                    <li>
-                        <label for="name"></label>
-                        <input type="text" id="name" placeholder="Last, First">
-                    </li>
-                    <li>
-                        <label for="email"></label>
-                        <input type="text" id="email" placeholder="example@gmail.com">
-                    </li>
-                    <li>
-                        <label for="phone"></label>
-                        <input type="text" id="phone" placeholder="Last, First">
-                    </li>
-                    <li class="submit"><a class="hide-large" href="#">submit</a></li>
-                </ul>
-            </section>
-            <section id="contact-large-input">
-                <textarea id="contact-message" placeholder="Enter your message here"></textarea>
-            </section>
-            <section class="submit">
-                <a class="hide-small" href="#">submit</a>
-            </section>
+            <form method="POST" id="contact-form">
+
+                <input type="hidden" name="access_key" value="ead7ce0c-6566-41e7-bd92-a26fe96b6587">
+
+                <section id="contact-small-input">
+                    <ul>
+                        <li>
+                            <label for="name"></label>
+                            <input type="text" name="name" placeholder="Last, First">
+                        </li>
+                        <li>
+                            <label for="email"></label>
+                            <input type="text" name="email" placeholder="example@gmail.com">
+                        </li>
+                        <li>
+                            <label for="phone"></label>
+                            <input type="text" name="phone" placeholder="000-000-0000">
+                        </li>
+                        <li class="submit"><a class="hide-large" href="#">submit</a></li>
+                    </ul>
+                </section>
+
+                <section id="contact-large-input">
+                    <textarea id="contact-message" placeholder="Enter your message here"></textarea>
+                </section>
+
+                <section class="submit">
+                     <button type="submit">Submit</button>
+                </section>
+
+                <div id="contact-result"></div>
+
+            </form>
+
         </section>
     </main>
 
     <footer>
 
     </footer>
- <script src="js/toggle-nav.js"></script> <!--ADD-->
+ <script src="js/toggle-nav.js"></script> 
+ <script src="js/contact.js"></script>
 </body>
 </html>
