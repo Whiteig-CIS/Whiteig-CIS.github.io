@@ -1,9 +1,10 @@
 /* Isaac White 2025 */
 :root {
-    --text1: #072233;
+    --text1: #fff;
     --background: #000000;
-    --header-background: #1e1e1e;
+    --header-background: #252525;
     --border: #6fe77d;
+    --li-background: #353535;
 }
 
 body {
@@ -42,11 +43,8 @@ body {
 
 #main-nav li {
     flex: 1;
-    
-    margin: 0px;
+    margin: 3px;
     border: 1px solid var(--border);
-    
-    
 }
 
 #main-nav a{
@@ -78,18 +76,20 @@ body {
     list-style-type: none;
     align-content: center;
     padding: 0;
-    width: 50%;
+    width: 80%;
 }
 
 #assignments li {
     padding: 5px 20px 5px 20px;
-    background: #fff;
+    background: var(--li-background);
     margin-bottom: 3px;
     
     display: block;
     width: 100%;
     margin-left: 0;
     box-sizing: border-box;
+
+    border: 1px solid var(--border);
 }
 
 #assignments p {
