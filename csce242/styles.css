@@ -1,7 +1,13 @@
 /* Isaac White 2025 */
+:root {
+    --text1: #072233;
+    --background: #000000;
+    --header-background: #1e1e1e;
+    --border: #6fe77d;
+}
 
 body {
-    background: #072233;
+    background: var(--background);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -12,16 +18,16 @@ body {
 
 /* main-header styling */
 #main-header {
-    background: #fff;
-    padding: 0 1% 1% 1%;
-    border-radius: 40px;
-    margin-top: 5px;
+    background: var(--header-background);
+    width: 100vw;
 }
 
 #main-header h1 {
-    padding-top: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+   padding-top: 20px;
+    /* margin-bottom: 5px;
+    margin-top: 5px; */
+    margin: 0%;
+    color: #fff !important;
 }
 
 /* Main-nav styling */
@@ -36,9 +42,11 @@ body {
 
 #main-nav li {
     flex: 1;
-    background: #072233;
-    margin: 1px;
-    border-radius: 5px;
+    
+    margin: 0px;
+    border: 1px solid var(--border);
+    
+    
 }
 
 #main-nav a{
@@ -53,7 +61,7 @@ body {
 /* typography */
 #main-header h1 {
     text-align: center;
-    color: #072233;
+    color: var(--text1);
     font-size: 9vw;
 }
 
@@ -89,7 +97,7 @@ body {
 }
 
 #assignments a {
-    color:#072233;
+    color:var(--text1);
     text-decoration: none;
 }
 
@@ -99,20 +107,35 @@ body {
     background-color: aliceblue;
     color: black;
     text-align: center;
-    padding: 3% 3%;
+    padding: 2% 2%;
     font-size: 100%;
     border-radius: 25px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links div {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 3px;
+    background: var(--text1);
+}
+
+.links div a {
+    color: #fff !important; 
 }
 
 /* for larger screens only */
 @media only screen and (min-width: 768px) {
     body {
-        background: url(images/nature.jpg);
         background-size: 100vw 100vh;
     }
 
     #main-header {
-        background: #072233d4;
+        background: var(--header-background);
     }
 
     #main-header h1 {
@@ -123,11 +146,10 @@ body {
     #main-nav li {
         font-size: 2.5vw;
         border-radius: 1px;
-        background: #fff;
+       
     }
 
-    #main-nav a{
-        color: #072233d4;
+    #main-nav a {
         padding-top: 5px;
         padding-bottom: 5px;
     }
