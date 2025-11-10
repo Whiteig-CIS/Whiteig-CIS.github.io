@@ -56,11 +56,15 @@ body {
     color: #fff;
 }
 
+
+.hover {
+    color: var(--border) !important;
+}
+
 /* typography */
 #main-header h1 {
     text-align: center;
     color: var(--text1);
-    font-size: 9vw;
 }
 
 #main-nav li {
@@ -94,6 +98,7 @@ body {
 
 #assignments p {
     text-align: center;
+    color: var(--text1);
 }
 
 #assignments a {
@@ -125,8 +130,10 @@ body {
 }
 
 .links div a {
-    color: #fff !important; 
+    color: var(--background)!important; 
 }
+
+
 
 /* for larger screens only */
 @media only screen and (min-width: 768px) {
